@@ -18,9 +18,8 @@ public class Team {
 
     private String manager;
 
-
-//    @OneToMany(mappedBy = "team")
-//    private List<User> user = new ArrayList<>();
+    @OneToMany(mappedBy = "team")
+    private List<User> user = new ArrayList<>();
 
     protected Team() {}
 
